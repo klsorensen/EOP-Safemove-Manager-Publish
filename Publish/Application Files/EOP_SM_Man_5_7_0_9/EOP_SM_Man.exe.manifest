@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="EOP_SM_Man.exe" version="5.7.0.9" publicKeyToken="8cab26b5819d9a6d" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="RoadBlock.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="EOP_SM_Man" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="EOP_SM_Man.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ApplicationUtilities.dll" size="40448">
+      <assemblyIdentity name="ApplicationUtilities" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>+cSRsBmuyNHpkeIEdmhge/XtIa4XXIOpa2hgICgkIK8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EOP_SM_Man.exe" size="614400">
+      <assemblyIdentity name="EOP_SM_Man" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rgopZbQr7ovIZ37Y7XaY2EeuRWhcD/Np9OWA6b+12BI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SequenceEditor.dll" size="87040">
+      <assemblyIdentity name="SequenceEditor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5jUobwqsQ1KXbYZ/XNnkATK4ch7gVQJ4LdwpkVk2KCI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WorkspaceViewer.dll" size="41472">
+      <assemblyIdentity name="WorkspaceViewer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>OTg6U+Jgm4kvoj46509VZzhgF3WlZBw/rRW5yQjzqq4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="EOP_SM_Man.exe.config" size="8960">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jHMP2M1xj4bEWRi/Pw+SO/6Fk4I3HFcb1totQ2TM+xc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="FormatDescriptors.xml" size="5768">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3jwv70zZnPIPUD83lWuh+xobhSSeFtDkV9/aYlSEwR8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="RoadBlock.ico" size="129014">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/bldltGaaiOgEaL6/ZZYMadt1II0QI1zzSKvqrohkHA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SequenceStatusIds.xml" size="1224">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sQEW1zsIBVfGAZ61NPrYTm8uQy1LwpdTuQBRv9LLJEk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=PAR\ksorensen" issuerKeyHash="2c95462fcdf44ccdd855f196c3ecb761a52b5086" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>MZKUtoBxMmW0Mx7C4DqHAPyMr2ARUY27YmGDeRT2kEs=</DigestValue></Reference></SignedInfo><SignatureValue>Nf3Nx33jdfVcG2wwrxdSWGkHdmkvFvLUDwG08sulfnJ9eOq+PItwPdUXqYa/kLz9cAXfLU3jCAkmGW0npld14sZ4ylJsVPXF1W4DYluLph3uHxls7+1299n/wRbaEUBUnUjSZlLe1F8ksRBI7Hse+SIoV0+DWbiJuV8vuKZ3ITs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>5BrXTnIgUS2FeM96tqFP4hKYDORV1yjLPk0QB9/CS5O4Kcx4w7/uJKiNXRP2OL8JCM0JZD/DupTK0HgOIjM1T3XEz8zylHFa6y8jNW0DsWorXxsgl40PeOY/S5ZIH4NsjXEz4zee3ZzwYVXbyEjKq9B0Ccl4Lw1vvLewM3YAzx0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4b90f61479836162bb8d511160af8cfc00873ae0c21e33b465327180b6949231" Description="" Url=""><as:assemblyIdentity name="EOP_SM_Man.exe" version="5.7.0.9" publicKeyToken="8cab26b5819d9a6d" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PAR\ksorensen</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>2qZZgGA733eveS6HzJEHnWWMkSDFrKIxfw5wLJp/OUg=</DigestValue></Reference></SignedInfo><SignatureValue>cAUiI3fVnX5tQc6JNuYJeITBeyQGUh3NYvhla9gE5k1BlpLYH0ShJ8hX5MdB/sp0xFi7TOWFWzv/7zqhV4g+xV5s+STjKxUYR4S176ZfglrkqJJoORU50fPWCbAfqO7iOyrIi9GvtgR3cVMKkMBT/6ZOn5gJ/+EZjpVO7kkLYi8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>5BrXTnIgUS2FeM96tqFP4hKYDORV1yjLPk0QB9/CS5O4Kcx4w7/uJKiNXRP2OL8JCM0JZD/DupTK0HgOIjM1T3XEz8zylHFa6y8jNW0DsWorXxsgl40PeOY/S5ZIH4NsjXEz4zee3ZzwYVXbyEjKq9B0Ccl4Lw1vvLewM3YAzx0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICGTCCAV2gAwIBAgIQFiK2A+0NT5hLhYps9v6ZEDAyBgkqhkiG9w0BAQswJTEjMCEGA1UEAx4aAFAAQQBSAFwAawBzAG8AcgBlAG4AcwBlAG4wJTEjMCEGA1UEAx4aAFAAQQBSAFwAawBzAG8AcgBlAG4AcwBlAG4wIBcNMTkwNTI0MDYxODUyWhgPMjEyNDA1MjQwNjE4NTJaMCUxIzAhBgNVBAMeGgBQAEEAUgBcAGsAcwBvAHIAZQBuAHMAZQBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDkGtdOciBRLYV4z3q2oU/iEpgM5FXXKMs+TRAH38JLk7gpzHjDv+4kqI1dE/Y4vwkIzQlkP8O6lMrQeA4iMzVPdcTPzPKUcVrrLyM1bQOxaitfGyCXjQ945j9Llkgfg2yNcTPjN57dnPBhVdvISMqr0HQJyXgvDW+8t7AzdgDPHQIDAQABMDIGCSqGSIb3DQEBCzAlMSMwIQYDVQQDHhoAUABBAFIAXABrAHMAbwByAGUAbgBzAGUAbgOBgQAZeOD9qIIout89YjvhhxOcC0eRd5qomryIV1zzQV5QMsXKgohNcjKktEkVA7+QFrY6Thtx49ThUwtb42+IXiX7MOdSNp1lTbeKywyW35A6ftYu712KAAGH1et4U1NNJroQiba7E3HM5e19wGCZ10UMqOYXqg9b5zGUwccB4/Kqmw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
